@@ -78,7 +78,7 @@ int main( int argc, const char* argv[] )
 	C.secType			= *SecType::STK;		//"STK"
 	C.currency			= "USD";
 	C.exchange			= *Exchange::IB_SMART;	//"SMART";
-	C.primaryExchange	= *Exchange::AMEX;
+	C.primaryExchange	= *Exchange::NASDAQ;
 
 
 	int EDTY			= 2014;
