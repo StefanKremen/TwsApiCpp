@@ -81,9 +81,9 @@ int main( int argc, const char* argv[] )
 	C.primaryExchange	= *Exchange::NASDAQ;
 
 
-	int EDTY			= 2014;
-	int EDTM			= 8;
-	int EDTD			= 4;
+	int EDTY			= 2016;
+	int EDTM			= 6;
+	int EDTD			= 15;
 	IBString DS			= DurationStr(1, *DurationHorizon::Months);
 	IBString BSS		= *BarSizeSetting::_1_day;
 	IBString WTS		= *WhatToShow::TRADES;
