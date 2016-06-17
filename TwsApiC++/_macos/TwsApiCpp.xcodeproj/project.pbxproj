@@ -7,33 +7,81 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		07A43E7C1CF1D73C004D14D2 /* CommissionReport.h in Headers */ = {isa = PBXBuildFile; fileRef = 07A43E391CF1D73C004D14D2 /* CommissionReport.h */; };
-		07A43E7D1CF1D73C004D14D2 /* CommonDefs.h in Headers */ = {isa = PBXBuildFile; fileRef = 07A43E3A1CF1D73C004D14D2 /* CommonDefs.h */; };
-		07A43E7E1CF1D73C004D14D2 /* Contract.h in Headers */ = {isa = PBXBuildFile; fileRef = 07A43E3B1CF1D73C004D14D2 /* Contract.h */; };
-		07A43E7F1CF1D73C004D14D2 /* EClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 07A43E3C1CF1D73C004D14D2 /* EClient.h */; };
-		07A43E801CF1D73C004D14D2 /* EClientSocketBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 07A43E3D1CF1D73C004D14D2 /* EClientSocketBase.h */; };
-		07A43E811CF1D73C004D14D2 /* EClientSocketBaseImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = 07A43E3E1CF1D73C004D14D2 /* EClientSocketBaseImpl.h */; };
-		07A43E821CF1D73C004D14D2 /* EWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 07A43E3F1CF1D73C004D14D2 /* EWrapper.h */; };
-		07A43E831CF1D73C004D14D2 /* Execution.h in Headers */ = {isa = PBXBuildFile; fileRef = 07A43E401CF1D73C004D14D2 /* Execution.h */; };
-		07A43E841CF1D73C004D14D2 /* IBString.h in Headers */ = {isa = PBXBuildFile; fileRef = 07A43E411CF1D73C004D14D2 /* IBString.h */; };
-		07A43E851CF1D73C004D14D2 /* Order.h in Headers */ = {isa = PBXBuildFile; fileRef = 07A43E421CF1D73C004D14D2 /* Order.h */; };
-		07A43E861CF1D73C004D14D2 /* OrderState.h in Headers */ = {isa = PBXBuildFile; fileRef = 07A43E431CF1D73C004D14D2 /* OrderState.h */; };
-		07A43E871CF1D73C004D14D2 /* ScannerSubscription.h in Headers */ = {isa = PBXBuildFile; fileRef = 07A43E441CF1D73C004D14D2 /* ScannerSubscription.h */; };
-		07A43E881CF1D73C004D14D2 /* shared_ptr.h in Headers */ = {isa = PBXBuildFile; fileRef = 07A43E451CF1D73C004D14D2 /* shared_ptr.h */; };
-		07A43E891CF1D73C004D14D2 /* StdAfx.h in Headers */ = {isa = PBXBuildFile; fileRef = 07A43E461CF1D73C004D14D2 /* StdAfx.h */; };
-		07A43E8A1CF1D73C004D14D2 /* TagValue.h in Headers */ = {isa = PBXBuildFile; fileRef = 07A43E471CF1D73C004D14D2 /* TagValue.h */; };
-		07A43E8B1CF1D73C004D14D2 /* TwsSocketClientErrors.h in Headers */ = {isa = PBXBuildFile; fileRef = 07A43E481CF1D73C004D14D2 /* TwsSocketClientErrors.h */; };
-		07A43E8E1CF1D73C004D14D2 /* EPosixClientSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 07A43E4C1CF1D73C004D14D2 /* EPosixClientSocket.h */; };
-		07A43E8F1CF1D73C004D14D2 /* EPosixClientSocketPlatform.h in Headers */ = {isa = PBXBuildFile; fileRef = 07A43E4D1CF1D73C004D14D2 /* EPosixClientSocketPlatform.h */; };
-		07A43E921CF1D73C004D14D2 /* Enumerations.h in Headers */ = {isa = PBXBuildFile; fileRef = 07A43E5F1CF1D73C004D14D2 /* Enumerations.h */; };
+		079A56761CFE256F007A780D /* Test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07A43E7A1CF1D73C004D14D2 /* Test.cpp */; };
+		079A56771CFE2621007A780D /* libTwsApiCpp.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0747E7F71CF1D698003F4F35 /* libTwsApiCpp.dylib */; };
+		07A43E7C1CF1D73C004D14D2 /* CommissionReport.h in Headers */ = {isa = PBXBuildFile; fileRef = 07A43E391CF1D73C004D14D2 /* CommissionReport.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		07A43E7D1CF1D73C004D14D2 /* CommonDefs.h in Headers */ = {isa = PBXBuildFile; fileRef = 07A43E3A1CF1D73C004D14D2 /* CommonDefs.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		07A43E7E1CF1D73C004D14D2 /* Contract.h in Headers */ = {isa = PBXBuildFile; fileRef = 07A43E3B1CF1D73C004D14D2 /* Contract.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		07A43E7F1CF1D73C004D14D2 /* EClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 07A43E3C1CF1D73C004D14D2 /* EClient.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		07A43E801CF1D73C004D14D2 /* EClientSocketBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 07A43E3D1CF1D73C004D14D2 /* EClientSocketBase.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		07A43E811CF1D73C004D14D2 /* EClientSocketBaseImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = 07A43E3E1CF1D73C004D14D2 /* EClientSocketBaseImpl.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		07A43E821CF1D73C004D14D2 /* EWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 07A43E3F1CF1D73C004D14D2 /* EWrapper.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		07A43E831CF1D73C004D14D2 /* Execution.h in Headers */ = {isa = PBXBuildFile; fileRef = 07A43E401CF1D73C004D14D2 /* Execution.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		07A43E841CF1D73C004D14D2 /* IBString.h in Headers */ = {isa = PBXBuildFile; fileRef = 07A43E411CF1D73C004D14D2 /* IBString.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		07A43E851CF1D73C004D14D2 /* Order.h in Headers */ = {isa = PBXBuildFile; fileRef = 07A43E421CF1D73C004D14D2 /* Order.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		07A43E861CF1D73C004D14D2 /* OrderState.h in Headers */ = {isa = PBXBuildFile; fileRef = 07A43E431CF1D73C004D14D2 /* OrderState.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		07A43E871CF1D73C004D14D2 /* ScannerSubscription.h in Headers */ = {isa = PBXBuildFile; fileRef = 07A43E441CF1D73C004D14D2 /* ScannerSubscription.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		07A43E881CF1D73C004D14D2 /* shared_ptr.h in Headers */ = {isa = PBXBuildFile; fileRef = 07A43E451CF1D73C004D14D2 /* shared_ptr.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		07A43E891CF1D73C004D14D2 /* StdAfx.h in Headers */ = {isa = PBXBuildFile; fileRef = 07A43E461CF1D73C004D14D2 /* StdAfx.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		07A43E8A1CF1D73C004D14D2 /* TagValue.h in Headers */ = {isa = PBXBuildFile; fileRef = 07A43E471CF1D73C004D14D2 /* TagValue.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		07A43E8B1CF1D73C004D14D2 /* TwsSocketClientErrors.h in Headers */ = {isa = PBXBuildFile; fileRef = 07A43E481CF1D73C004D14D2 /* TwsSocketClientErrors.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		07A43E8E1CF1D73C004D14D2 /* EPosixClientSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 07A43E4C1CF1D73C004D14D2 /* EPosixClientSocket.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		07A43E8F1CF1D73C004D14D2 /* EPosixClientSocketPlatform.h in Headers */ = {isa = PBXBuildFile; fileRef = 07A43E4D1CF1D73C004D14D2 /* EPosixClientSocketPlatform.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		07A43E921CF1D73C004D14D2 /* Enumerations.h in Headers */ = {isa = PBXBuildFile; fileRef = 07A43E5F1CF1D73C004D14D2 /* Enumerations.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		07A43E931CF1D73C004D14D2 /* TwsApiDefs.h in Headers */ = {isa = PBXBuildFile; fileRef = 07A43E601CF1D73C004D14D2 /* TwsApiDefs.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		07A43E941CF1D73C004D14D2 /* TwsApiL0.h in Headers */ = {isa = PBXBuildFile; fileRef = 07A43E611CF1D73C004D14D2 /* TwsApiL0.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		07A43E951CF1D73C004D14D2 /* afxwin.h in Headers */ = {isa = PBXBuildFile; fileRef = 07A43E641CF1D73C004D14D2 /* afxwin.h */; };
+		07A43E951CF1D73C004D14D2 /* afxwin.h in Headers */ = {isa = PBXBuildFile; fileRef = 07A43E641CF1D73C004D14D2 /* afxwin.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		07A43E961CF1D73C004D14D2 /* TwsApiL0.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07A43E651CF1D73C004D14D2 /* TwsApiL0.cpp */; };
+		07F0F6291D1486AA005CE00C /* Bars.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07A43E761CF1D73C004D14D2 /* Bars.cpp */; };
+		07F0F62A1D14870B005CE00C /* libTwsApiCpp.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0747E7F71CF1D698003F4F35 /* libTwsApiCpp.dylib */; };
+		07F0F6361D14875F005CE00C /* Clients.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07A43E771CF1D73C004D14D2 /* Clients.cpp */; };
+		07F0F6371D14876C005CE00C /* libTwsApiCpp.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0747E7F71CF1D698003F4F35 /* libTwsApiCpp.dylib */; };
+		07F0F6431D1487D6005CE00C /* History.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07A43E791CF1D73C004D14D2 /* History.cpp */; };
+		07F0F6441D1487DD005CE00C /* libTwsApiCpp.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0747E7F71CF1D698003F4F35 /* libTwsApiCpp.dylib */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		079A566D1CFE256A007A780D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		07F0F6201D14869B005CE00C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		07F0F62D1D148751005CE00C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		07F0F63A1D1487CA005CE00C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0747E7F71CF1D698003F4F35 /* libTwsApiCpp.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libTwsApiCpp.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		079A566F1CFE256A007A780D /* Test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Test; sourceTree = BUILT_PRODUCTS_DIR; };
 		07A43E391CF1D73C004D14D2 /* CommissionReport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommissionReport.h; sourceTree = "<group>"; };
 		07A43E3A1CF1D73C004D14D2 /* CommonDefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonDefs.h; sourceTree = "<group>"; };
 		07A43E3B1CF1D73C004D14D2 /* Contract.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Contract.h; sourceTree = "<group>"; };
@@ -82,6 +130,9 @@
 		07A43E791CF1D73C004D14D2 /* History.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = History.cpp; sourceTree = "<group>"; };
 		07A43E7A1CF1D73C004D14D2 /* Test.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Test.cpp; sourceTree = "<group>"; };
 		07A43E7B1CF1D73C004D14D2 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../README.md; sourceTree = "<group>"; };
+		07F0F6221D14869B005CE00C /* Bars */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Bars; sourceTree = BUILT_PRODUCTS_DIR; };
+		07F0F62F1D148751005CE00C /* Clients */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Clients; sourceTree = BUILT_PRODUCTS_DIR; };
+		07F0F63C1D1487CA005CE00C /* History */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = History; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +140,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		079A566C1CFE256A007A780D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				079A56771CFE2621007A780D /* libTwsApiCpp.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07F0F61F1D14869B005CE00C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07F0F62A1D14870B005CE00C /* libTwsApiCpp.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07F0F62C1D148751005CE00C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07F0F6371D14876C005CE00C /* libTwsApiCpp.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07F0F6391D1487CA005CE00C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07F0F6441D1487DD005CE00C /* libTwsApiCpp.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,6 +192,10 @@
 			isa = PBXGroup;
 			children = (
 				0747E7F71CF1D698003F4F35 /* libTwsApiCpp.dylib */,
+				079A566F1CFE256A007A780D /* Test */,
+				07F0F6221D14869B005CE00C /* Bars */,
+				07F0F62F1D148751005CE00C /* Clients */,
+				07F0F63C1D1487CA005CE00C /* History */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -334,7 +421,10 @@
 			files = (
 				07A43E931CF1D73C004D14D2 /* TwsApiDefs.h in Headers */,
 				07A43E941CF1D73C004D14D2 /* TwsApiL0.h in Headers */,
+				07A43E921CF1D73C004D14D2 /* Enumerations.h in Headers */,
 				07A43E8B1CF1D73C004D14D2 /* TwsSocketClientErrors.h in Headers */,
+				07A43E821CF1D73C004D14D2 /* EWrapper.h in Headers */,
+				07A43E841CF1D73C004D14D2 /* IBString.h in Headers */,
 				07A43E7C1CF1D73C004D14D2 /* CommissionReport.h in Headers */,
 				07A43E851CF1D73C004D14D2 /* Order.h in Headers */,
 				07A43E861CF1D73C004D14D2 /* OrderState.h in Headers */,
@@ -345,10 +435,7 @@
 				07A43E881CF1D73C004D14D2 /* shared_ptr.h in Headers */,
 				07A43E7F1CF1D73C004D14D2 /* EClient.h in Headers */,
 				07A43E871CF1D73C004D14D2 /* ScannerSubscription.h in Headers */,
-				07A43E841CF1D73C004D14D2 /* IBString.h in Headers */,
 				07A43E8F1CF1D73C004D14D2 /* EPosixClientSocketPlatform.h in Headers */,
-				07A43E921CF1D73C004D14D2 /* Enumerations.h in Headers */,
-				07A43E821CF1D73C004D14D2 /* EWrapper.h in Headers */,
 				07A43E831CF1D73C004D14D2 /* Execution.h in Headers */,
 				07A43E801CF1D73C004D14D2 /* EClientSocketBase.h in Headers */,
 				07A43E891CF1D73C004D14D2 /* StdAfx.h in Headers */,
@@ -377,16 +464,97 @@
 			productReference = 0747E7F71CF1D698003F4F35 /* libTwsApiCpp.dylib */;
 			productType = "com.apple.product-type.library.dynamic";
 		};
+		079A566E1CFE256A007A780D /* Test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 079A56731CFE256A007A780D /* Build configuration list for PBXNativeTarget "Test" */;
+			buildPhases = (
+				079A566B1CFE256A007A780D /* Sources */,
+				079A566C1CFE256A007A780D /* Frameworks */,
+				079A566D1CFE256A007A780D /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Test;
+			productName = Test;
+			productReference = 079A566F1CFE256A007A780D /* Test */;
+			productType = "com.apple.product-type.tool";
+		};
+		07F0F6211D14869B005CE00C /* Bars */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07F0F6261D14869B005CE00C /* Build configuration list for PBXNativeTarget "Bars" */;
+			buildPhases = (
+				07F0F61E1D14869B005CE00C /* Sources */,
+				07F0F61F1D14869B005CE00C /* Frameworks */,
+				07F0F6201D14869B005CE00C /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Bars;
+			productName = Bars;
+			productReference = 07F0F6221D14869B005CE00C /* Bars */;
+			productType = "com.apple.product-type.tool";
+		};
+		07F0F62E1D148751005CE00C /* Clients */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07F0F6331D148751005CE00C /* Build configuration list for PBXNativeTarget "Clients" */;
+			buildPhases = (
+				07F0F62B1D148751005CE00C /* Sources */,
+				07F0F62C1D148751005CE00C /* Frameworks */,
+				07F0F62D1D148751005CE00C /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Clients;
+			productName = Clients;
+			productReference = 07F0F62F1D148751005CE00C /* Clients */;
+			productType = "com.apple.product-type.tool";
+		};
+		07F0F63B1D1487CA005CE00C /* History */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07F0F6401D1487CA005CE00C /* Build configuration list for PBXNativeTarget "History" */;
+			buildPhases = (
+				07F0F6381D1487CA005CE00C /* Sources */,
+				07F0F6391D1487CA005CE00C /* Frameworks */,
+				07F0F63A1D1487CA005CE00C /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = History;
+			productName = History;
+			productReference = 07F0F63C1D1487CA005CE00C /* History */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		0747E7EF1CF1D698003F4F35 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = piftik;
 				TargetAttributes = {
 					0747E7F61CF1D698003F4F35 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					079A566E1CFE256A007A780D = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					07F0F6211D14869B005CE00C = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					07F0F62E1D148751005CE00C = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					07F0F63B1D1487CA005CE00C = {
 						CreatedOnToolsVersion = 7.3.1;
 					};
 				};
@@ -410,6 +578,10 @@
 			projectRoot = "";
 			targets = (
 				0747E7F61CF1D698003F4F35 /* TwsApiCpp */,
+				079A566E1CFE256A007A780D /* Test */,
+				07F0F6211D14869B005CE00C /* Bars */,
+				07F0F62E1D148751005CE00C /* Clients */,
+				07F0F63B1D1487CA005CE00C /* History */,
 			);
 		};
 /* End PBXProject section */
@@ -420,6 +592,38 @@
 			buildActionMask = 2147483647;
 			files = (
 				07A43E961CF1D73C004D14D2 /* TwsApiL0.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		079A566B1CFE256A007A780D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				079A56761CFE256F007A780D /* Test.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07F0F61E1D14869B005CE00C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07F0F6291D1486AA005CE00C /* Bars.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07F0F62B1D148751005CE00C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07F0F6361D14875F005CE00C /* Clients.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07F0F6381D1487CA005CE00C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07F0F6431D1487D6005CE00C /* History.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,6 +660,7 @@
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
+					_DEBUG,
 				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -510,31 +715,130 @@
 		0747E7FC1CF1D698003F4F35 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_WARN_ASSIGN_ENUM = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEPLOYMENT_LOCATION = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				EXECUTABLE_PREFIX = lib;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_SHADOW = YES;
 				HEADER_SEARCH_PATHS = (
 					../Api,
 					../Src,
 					../../source/PosixClient/Shared,
 					../../source/PosixClient/src,
 				);
+				MACH_O_TYPE = mh_dylib;
+				PRODUCT_BUNDLE_IDENTIFIER = eu.piftik.TwsApiCpp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VERSIONING_SYSTEM = "";
 			};
 			name = Debug;
 		};
 		0747E7FD1CF1D698003F4F35 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_WARN_ASSIGN_ENUM = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEPLOYMENT_LOCATION = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				EXECUTABLE_PREFIX = lib;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_SHADOW = YES;
 				HEADER_SEARCH_PATHS = (
 					../Api,
 					../Src,
 					../../source/PosixClient/Shared,
 					../../source/PosixClient/src,
 				);
+				MACH_O_TYPE = mh_dylib;
+				PRODUCT_BUNDLE_IDENTIFIER = eu.piftik.TwsApiCpp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "";
+			};
+			name = Release;
+		};
+		079A56741CFE256A007A780D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		079A56751CFE256A007A780D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		07F0F6271D14869B005CE00C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		07F0F6281D14869B005CE00C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		07F0F6341D148751005CE00C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		07F0F6351D148751005CE00C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		07F0F6411D1487CA005CE00C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		07F0F6421D1487CA005CE00C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -559,6 +863,39 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		079A56731CFE256A007A780D /* Build configuration list for PBXNativeTarget "Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				079A56741CFE256A007A780D /* Debug */,
+				079A56751CFE256A007A780D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07F0F6261D14869B005CE00C /* Build configuration list for PBXNativeTarget "Bars" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07F0F6271D14869B005CE00C /* Debug */,
+				07F0F6281D14869B005CE00C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		07F0F6331D148751005CE00C /* Build configuration list for PBXNativeTarget "Clients" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07F0F6341D148751005CE00C /* Debug */,
+				07F0F6351D148751005CE00C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		07F0F6401D1487CA005CE00C /* Build configuration list for PBXNativeTarget "History" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07F0F6411D1487CA005CE00C /* Debug */,
+				07F0F6421D1487CA005CE00C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

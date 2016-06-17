@@ -4,6 +4,26 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Bars.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>Clients.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>History.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+		<key>Test.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>TwsApiCpp.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
@@ -13,6 +33,31 @@
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>0747E7F61CF1D698003F4F35</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>079A565F1CFDFF7E007A780D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>079A566E1CFE256A007A780D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>07F0F6211D14869B005CE00C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>07F0F62E1D148751005CE00C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>07F0F63B1D1487CA005CE00C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
