@@ -459,7 +459,7 @@ struct EClientL0Impl: public EPosixClientSocket
 		fd_set WriteSet; FD_ZERO( &WriteSet ); if( !isOutBufferEmpty() ) FD_SET ( SH, &WriteSet );
 		fd_set ErrorSet; FD_ZERO( &ErrorSet ); FD_SET ( SH, &ErrorSet );
 
-		struct timeval timeout = {0,static_cast<int>(waitfor)};	// wait for some milli/micro seconds
+		struct timeval timeout = {0,waitfor};	// wait for some milli/micro seconds
 		int s = select( SH+1, &ReadSet, &WriteSet, &ErrorSet, &timeout );
 				s = s; // turn of -Wall warning
 

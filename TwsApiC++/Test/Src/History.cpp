@@ -78,12 +78,12 @@ int main( int argc, const char* argv[] )
 	C.secType			= *SecType::STK;		//"STK"
 	C.currency			= "USD";
 	C.exchange			= *Exchange::IB_SMART;	//"SMART";
-	C.primaryExchange	= *Exchange::NASDAQ;
+	C.primaryExchange	= *Exchange::AMEX;
 
 
-	int EDTY			= 2016;
-	int EDTM			= 6;
-	int EDTD			= 15;
+	int EDTY			= 2014;
+	int EDTM			= 8;
+	int EDTD			= 4;
 	IBString DS			= DurationStr(1, *DurationHorizon::Months);
 	IBString BSS		= *BarSizeSetting::_1_day;
 	IBString WTS		= *WhatToShow::TRADES;

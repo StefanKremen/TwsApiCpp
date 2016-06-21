@@ -75,7 +75,7 @@ int main( void )
 	C.secType	= *SecType::STK;		//"STK"
 	C.currency	= "USD";
 	C.exchange	= *Exchange::IB_SMART;	//"SMART";
-	C.primaryExchange = *Exchange::NASDAQ;
+
 
 
 	//
