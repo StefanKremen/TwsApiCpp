@@ -48,6 +48,49 @@ class MyEWrapper: public EWrapperL0
 			, *(TickTypes::ENUMS)field, price
 			);
 	}
+    
+    virtual void tickString( TickerId tickerId, TickType tickType, const IBString& value )
+    {
+        time_t		_t; time(&_t);
+        struct tm	_tm	= *localtime( &_t );
+        time_t		_t1 = atol((const char*)value);
+        struct tm	_tm1= *localtime( &_t1 );
+        
+        switch( tickType )
+        {
+            case TickTypes::LastTimestamp:
+                printf
+                ( "TP: %4ld %02d:%02d:%02d %15s %02d:%02d:%02d\n"
+                 , tickerId
+                 , _tm.tm_hour, _tm.tm_min, _tm.tm_sec
+                 , *(TickTypes::ENUMS)tickType
+                 , _tm1.tm_hour, _tm1.tm_min, _tm1.tm_sec
+                 );
+            default:{}
+        }
+    }
+    
+    virtual void tickGeneric(TickerId tickerId, TickType tickType, double value)
+    {
+        printf( "TP Generic: %4ld %15s %15f\n"
+               , tickerId
+               , *(TickTypes::ENUMS)tickType
+               , value
+               );
+        /*
+        switch(tickType)
+        {
+            case TickTypes::LastTimestamp:
+                printf
+                ( "TP: %4ld %02d:%02d:%02d %15s %8f\n"
+                 , tickerId
+                 , _tm.tm_hour, _tm.tm_min, _tm.tm_sec
+                 , *(TickTypes::ENUMS)tickType
+                 , value
+                 );
+            default:{}
+        }*/
+    }
 
 	virtual void tickSize( TickerId tickerId, TickType field, int size )
 	{
@@ -91,12 +134,17 @@ class MyEWrapper: public EWrapperL0
 		PrintProcessId,printf( "nextValidId = %ld\n", orderId );
 	}
 
-	virtual void contractDetails( const ContractDetails& contractDetails )
+	virtual void contractDetails( int reqId, const ContractDetails& contractDetails )
 	{
 		const Contract& C = contractDetails.summary;
 
-		PrintProcessId,printf	( "CD: %10s %5s %8s, %5.2f\n", (const char*)C.localSymbol, (const char*)C.secType, (const char*)C.expiry, C.strike );
+		PrintProcessId,printf( "CD: %10s %5s %8s, %5.2f\n", (const char*)C.localSymbol, (const char*)C.secType, (const char*)C.expiry, C.strike );
 	}
+    
+    virtual void contractDetailsEnd( int reqId )
+    {
+        PrintProcessId,printf("CD: %i end\n", reqId);
+    }
 
 	virtual void error( const int id, const int errorCode, const IBString errorString )
 	{
@@ -226,7 +274,7 @@ int main( void )
 
 //	TestEnums();
 
-	Contract_			C( "MSFT", *SecType::STK, "USD", *Exchange::IB_SMART, *Exchange::NASDAQ );
+	Contract_			C( "SPY", *SecType::STK, "USD", *Exchange::IB_SMART, *Exchange::IB_SMART );
 
 /*
 	Contract			C;
@@ -244,7 +292,7 @@ int main( void )
 
 	TEST(0, EC->eDisconnect() );	// only for test purposes
 
-	if( TEST(0, EC->eConnect( "", 7496, 100 )) )
+	if( TEST(0, EC->eConnect( "", 4001, 100 )) )
 	{
 		PrintProcessId,printf( "ServerVersion = %d\n", EC->serverVersion() );
 
@@ -255,20 +303,21 @@ int main( void )
 */
 
 //		for( int i = 0; i < 60; i++ )
-		TEST( 100, EC->reqMktData( 100, C, "", false ) );
+//		TEST( 100, EC->reqMktData( 100, C, "", false ) );
 /*
 		EC->reqMktDepth( 11, C, 3 );
 */
-		EC->reqHistoricalData
+/*		EC->reqHistoricalData
 			( 20
 			, C
-			, EndDateTime(2014,8,4)
+			, EndDateTime(2015,8,4)
 			, DurationStr(1, *DurationHorizon::Days)
 			, *BarSizeSetting::_1_hour
 			, *WhatToShow::TRADES
 			, true
 			, FormatDate::AsDate
 			);
+        */
 /*
 //		EC->reqMktData( 20, C, false );
 		EC->reqHistoricalData
@@ -282,11 +331,11 @@ int main( void )
 */
 		{
 		Contract C;
-		C.symbol	= "C";
+		C.symbol	= "SPY";
 		C.secType	= *SecType::OPT;		//"STK"
 		C.currency	= "USD";
 		C.exchange	= *Exchange::IB_SMART;	//"SMART";
-		EC->reqContractDetails( 25, C );
+		TEST(25, EC->reqContractDetails( 25, C ) );
 
 
 //		EC->reqContractDetails( C );
@@ -300,21 +349,21 @@ int main( void )
 */
 	}
 
-	int id = 1;
+    int id = 1;
 	while( id++ < 1000 )
 	{
 	//	if( !MW.IsCalledFromThread() ) EC->checkMessages();
 		Sleep( 100 );
-
-	/* for 'stress' testing */
+ 
+//	for 'stress' testing
 		if( 0 == id%50)
 			TEST(id, EC->reqMktData( id, C, "", false ) );
-	/**/
-		if( 30 == id)
-			TEST(id, EC->eDisconnect() );
-	/**/
-		if( 40 == id)
-			TEST(id, EC->eDisconnect() );
+
+//		if( 30 == id)
+//			TEST(id, EC->eDisconnect() );
+
+//		if( 40 == id)
+//			TEST(id, EC->eDisconnect() );
 
 
 		if( 60 == id || 70 == id )
@@ -342,13 +391,12 @@ int main( void )
 		if( 200 == id )
 			TEST(id, EC->reqMktData( id, C, "", false ) );
 
-	/**/
 		if( 800 == id)
 			TEST(id, EC->cancelMktData( 200 ) );
-	/**/
+
 	}
 
-
+    
 	TEST( 0, EC->eDisconnect() );
 
 	delete EC;
