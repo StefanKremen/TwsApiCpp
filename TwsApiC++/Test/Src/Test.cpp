@@ -3,7 +3,6 @@
 //============================================================================
 #include "TwsApiL0.h"
 #include "TwsApiDefs.h"
-#include <iostream>
 using namespace TwsApi;
 
 // to use the Sleep function
@@ -18,8 +17,7 @@ using namespace TwsApi;
 	#define CurrentThreadId pthread_self
 #endif
 
-//#define PrintProcessId printf("%ld  ", CurrentThreadId() )
-#define PrintProcessId (std::cout << CurrentThreadId() << "  ")
+#define PrintProcessId printf("%ld  ", CurrentThreadId() )
 
 #include <time.h>
 
@@ -139,11 +137,8 @@ class MyEWrapper: public EWrapperL0
 	virtual void contractDetails( int reqId, const ContractDetails& contractDetails )
 	{
 		const Contract& C = contractDetails.summary;
-        const IBString& T = contractDetails.liquidHours;
-        const IBString& Tz = contractDetails.timeZoneId;
 
 		PrintProcessId,printf( "CD: %10s %5s %8s, %5.2f\n", (const char*)C.localSymbol, (const char*)C.secType, (const char*)C.expiry, C.strike );
-        PrintProcessId,printf( "CD: %s in %s\n", (const char*)T, (const char*)Tz);
 	}
     
     virtual void contractDetailsEnd( int reqId )
