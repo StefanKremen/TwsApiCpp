@@ -5,5 +5,5 @@ source/PosixClient/Shared/HScrollListBox.cpp
 source/PosixClient/Shared/HScrollListBox.h
 *.suo
 .DS_Store
-
+*.xcbkptlist
 *.xcuserstate
